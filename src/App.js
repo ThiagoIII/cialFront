@@ -5,7 +5,7 @@ import store from './store'
 import { addQueryToSideBar } from './actions/index'
 function App() {
     React.useEffect(() => {
-        fetch('http://localhost:3333/')
+        fetch('https://cialback.herokuapp.com/')
             .then(res => res.json())
             .then(async data => {
                 let splited = data.split('\n')

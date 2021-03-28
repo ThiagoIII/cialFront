@@ -1,7 +1,7 @@
 const handleSubmit = async (e, endpoint, query, save) => {
     e.preventDefault()
     let queryobj = { query: query, save: save }
-    let url = 'http://localhost:3333'
+    let url = 'https://cialback.herokuapp.com/'
     let results = await fetch(`${url}/${endpoint}`, {
         method: 'POST',
         headers: {
