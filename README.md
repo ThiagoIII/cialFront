@@ -1,3 +1,25 @@
+Hi there, this project was started with a redux-react template as stated in more details below.
+
+In order to try this part, the frontend, in your local machine follow these instructions:
+
+-   In your chosen directory, initialize a git repowith -> git init, then just follow:
+-   git clone https://github.com/ThiagoIII/cialFront.git
+-   npm i
+-   npm start
+
+This will open a window in your default browser with the project (almost zero styling bear in mind please), then you just need to type what you want in the search box and choose one of the two buttons, one with GET method and the other with POST, but the POST part I couldn't have it work, more info below.
+
+Technical observations
+It has been a while since I have worked with Redux and i can say that I did not miss it.
+The React Context API has worked very well to me so far.
+To me Redux is more complex and achieves the same thing, there are many options with state management in React and every case has its own best option.
+Since for this project was asked to use Redux I used the way I undestand it better.
+Regarding the POST method endpoind I could not find a way to use it with the DuckDuckGo API so I stuck with the GET method. The POST endpoint is there but there is no actual funcionality.
+First time using the write/read feature from NodeJS, seemed somewhat simple to use it for simple basic cases.
+I decided to persist the in-session list of queries in memory so no user have access to it.
+For the reuse of queries in the sidemenu list I could have gone with useMemo but I decided to go with a new request since DuckDuckGo API didn't return many requests so maybe using a hook would have the more or less same weigth in performance, since this hook is recommended for heavy calculations functions, really dont know and this decision just sped up dev production.
+Deployed to Github, hosted in Vercel and Heroku.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
